@@ -1,0 +1,33 @@
+# Machine Learning / LoRA Training
+*.safetensors
+*.ckpt
+*.bin
+*.pt
+*.pth
+*.onnx
+
+# Data
+data/*
+!data/.gitkeep
+
+# Models and Adapters
+models/*
+!models/.gitkeep
+adapters/*
+!adapters/.gitkeep
+
+# Logs and Checkpoints
+logs/
+checkpoints/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# OS
+.DS_Store
+Thumbs.db

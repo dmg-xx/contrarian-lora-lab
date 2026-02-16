@@ -1,0 +1,12 @@
+# --- MLX & Training Core ---
+mlx-lm
+datasets
+huggingface_hub
+
+# --- API & Web Server ---
+fastapi
+uvicorn[standard]
+pydantic
+
+# --- Utilities ---
+tqdm
