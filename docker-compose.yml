@@ -2,7 +2,7 @@ services:
   agent-brain:
     build: .
     volumes:
-      - .:/workspace # Syncs your code/data with the container
+      - .:/workspace
     environment:
       - PYTHONUNBUFFERED=1
-    tty: true # Keeps the container alive for Antigravity to attach
+    tty: true
