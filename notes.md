@@ -35,4 +35,4 @@ Alpha: 32 (1:1 Ratio with Rank)
 Learning Rate: 5e-5 (Half-speed)
 Scale: 10.0
 Result: FULL RECOVERY. Loss stabilized at 0.107.
-Outcome: The model now successfully tracks conversation context without producing gibberish tokens. This configuration is the "Golden Image" for the Barnaby persona.
+Outcome: The model now successfully tracks conversation context without producing gibberish tokens. This configuration is the "Golden Image" for the Barnaby persona

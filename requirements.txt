@@ -1,5 +1,6 @@
 # --- MLX & Training Core ---
 mlx-lm
+mlx
 datasets
 huggingface_hub
 
@@ -8,5 +9,7 @@ fastapi
 uvicorn[standard]
 pydantic
 
-# --- Utilities ---
+# --- Utilities & Networking ---
+requests
 tqdm
+pathlib
