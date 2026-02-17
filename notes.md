@@ -27,3 +27,12 @@ Results: Model Collapse.
 The model produced gibberish tokens and non-English fragments.
 Root Cause: Weight instability (Exploding Gradients). The high Alpha combined with more complex multi-turn data pushed the weights past the breaking point.
 Current Status: Reverting to a Stability Configuration (Alpha 32, LR 5e-5) to re-baseline the persona.
+
+v4.1: The Stability Baseline (Success)
+Goal: Recover from v4.0 Model Collapse while retaining multi-turn coherence.
+Architecture:
+Alpha: 32 (1:1 Ratio with Rank)
+Learning Rate: 5e-5 (Half-speed)
+Scale: 10.0
+Result: FULL RECOVERY. Loss stabilized at 0.107.
+Outcome: The model now successfully tracks conversation context without producing gibberish tokens. This configuration is the "Golden Image" for the Barnaby persona.
