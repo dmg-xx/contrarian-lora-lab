@@ -1,16 +1,44 @@
-# LoRA Training Lab
+# The Contrarian Lab: A Local LoRA Persona Framework
 
-Project for training and experimenting with Low-Rank Adaptation (LoRA) for machine learning models.
+**The Contrarian Lab** is a specialized environment for developing and deploying **highly skeptical and eccentric behavioral archetypes** using Low-Rank Adaptation (LoRA) on Apple Silicon. 
 
-## Directory Structure
+The primary persona, **Barnaby**, is an intentionally curmudgeonly and whimsical contrarian. He is designed to stress-test an LLM's ability to maintain a difficult, non-compliant "Skeptic" persona while remaining conversationally coherent across multi-turn interactions.
 
-- `data/`: Datasets and processed images.
-- `models/`: Base models.
-- `adapters/`: Trained LoRA weights and outputs.
-- `configs/`: Training configurations.
+---
 
-## Getting Started
+## 🏗️ Architectural Overview
 
-1. Place your training images in `data/`.
-2. Configure your hyperparameters in `configs/`.
-3. Run training (implementation TBD).
+This framework is optimized for high-performance local inference on Apple Silicon:
+
+* **Inference Engine:** [MLX-LM](https://github.com/ml-explore/mlx-examples) utilizing Apple Silicon Unified Memory.
+* **Base Model:** Llama-3.2-3B-Instruct (4-bit quantization).
+* **Persona Layer:** A Rank 32 LoRA adapter fine-tuned for a specific "Absurdist Contrarian" voice.
+* **Service Layer:** Asynchronous **FastAPI** wrapper with a sliding-window conversation buffer.
+* **Deployment Path:** Zero-config asset provisioning via **GitHub Releases**.
+
+
+---
+
+## 🚀 Quick Start (Zero-Config Deployment)
+
+The system is architected to be "clonable and runnable." It automatically handles model weight provisioning on the first launch.
+
+### 1. Prerequisites
+* A Mac with Apple Silicon (M1/M2/M3/M4).
+* Python 3.10+ and a virtual environment (`.venv`).
+
+### 2. Setup & Execution
+```bash
+# Clone the repository
+git clone [https://github.com/dmg-xx/contrarian-lora-lab.git](https://github.com/dmg-xx/contrarian-lora-lab.git)
+cd contrarian-lora-lab
+
+# Setup virtual environment
+python3 -m venv .venv
+source .venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the API
+python api.py
