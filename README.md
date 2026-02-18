@@ -19,7 +19,7 @@ This framework is optimized for high-performance local inference on Apple Silico
 
 ---
 
-## 🚀 Quick Start (Zero-Config Deployment)
+## 🚀 Quick Start
 
 The system is architected to be "clonable and runnable." It automatically handles model weight provisioning on the first launch.
 
